@@ -6,13 +6,13 @@ public class Motor {
 	String tipo;
 	int registro;
 	
-	void cambiarRegistro(int registro) {
-		int registo= registro; 
+	public void cambiarRegistro(int registro) {
+		this.registro= registro; 
 	}
 	
 	void asignarTipo(String tipo) {
 		if (tipo.equals("electrico") || tipo.equals("gasolina")) {
-			String cambio=tipo;
+			this.tipo=tipo;
 		}
 	}
 }
